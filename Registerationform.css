@@ -1,0 +1,91 @@
+
+
+
+.form-container {
+    display: flex;
+    justify-content: space-between; /* Create two columns */
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  @media (max-width: 600px) {
+    .form-container {
+      flex-direction: column;
+    }
+  
+    .form-column {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
+  /* Individual form columns */
+  .form-column {
+    width: 100%; /* Each column takes half the available space */
+    padding: 50px;
+    margin-left: 15px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-top: -50px;
+  }
+  
+  /* Styling for form labels */
+  label {
+    color: #04213F;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for form inputs */
+  input[type="text"] {
+    /* pointer-events: none; */
+    width: 80%;
+    padding: 4px;              
+    margin-bottom: 10px;
+    border: .5px solid black;
+    background: none;
+    /* box-shadow: 0 5px 5px rgba(4, 247, 57, 0.856);     */
+    
+    /* border-radius: 5px; */
+    outline: none;
+  }
+  
+  /* Styling for date picker */
+  .react-datepicker {
+    width: 100%;
+  }
+  
+  /* Styling for buttons */
+  button[type="submit"] {
+    width: 10%;
+    margin-top: -5px;
+    margin-left: 70%;
+    padding: 10px;
+    background-color: #0069d9;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2e89ff;
+    
+  }
+  
+  /* Additional styling for read-only input */
+  input{
+    background-color: #f2f2f2;
+  }
+ .form-container .form-column .field{
+  background: white;
+   }
+
+  .form-container .form-column .display-flex{
+    display: flex;
+    gap: 1rem;
+  }
+  .form-container .form-column .flx{
+    display: flex;
+  }
+  .form-container .form-column .imgs{
+    object-fit: cover;
+    background-position: center;
+  }
